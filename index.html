@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please enter password!</title>
+   
+
+    <style>
+        body {
+            align-items: center;
+            text-align: center;
+        }
+
+        button {
+            font-size: 20px;
+        }
+
+        input {
+            height: 30px;
+            width: 300px;
+            font-size: 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Please enter the password for this website.</h1>
+    <input type="password" name="" id="passwordInput" placeholder="Password here..."> 
+    <br>
+    <br>
+    <button onclick="enterWebsite();">Enter this website</button>
+    <script type="text/javascript">
+    function enterWebsite() {
+        var confirmPassword = "1215";
+        var password = document.getElementById("passwordInput").value;
+        console.log("User entered: " + password)
+        if (password == confirmPassword) {
+             window.location.replace("home.html");
+        }
+        else{
+            alert("Wrong Password! Please try again!");
+            window.location = "index.html"
+        }
+    }
+    </script>
+</body>
+</html>
