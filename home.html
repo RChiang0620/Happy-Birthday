@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        td {
+            text-align: center;
+            font-family: Bradley Hand ITC;
+            font-size: 40px;
+            cursor: pointer;
+            color: rgb(255, 181, 255);
+        }
+
+        table {
+            width: 100%;
+            background-color: rgb(23, 0, 53);
+            padding: 40px;
+        }
+
+        header {
+            margin: 20px;
+        }
+
+        html {
+            background-color: rgb(255, 181, 255);
+        }
+
+        #section1 {
+            background-image: url(IMG_5027.JPG);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% auto ;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            font-family: font_1;
+            font-size: 200px;
+            color: rgb(23, 0, 53);
+            margin: 20px;
+        }
+
+        @font-face {
+            font-family: font_1;
+            src: url(DyeLine_Regular.ttf);
+        }
+
+        #span_header {
+            padding: 140px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+        }
+    </style>
+    <script>
+        function bdayPresents() {
+            location.replace("Bday_presents.html")
+        }
+
+        function bdayDinner() {
+            location.replace("Bday_dinner_info.html")
+        }
+
+        
+    </script>
+</head>
+
+<body>
+    
+    <header>
+        <table>
+            <td onclick="bdayPresents();"><b><u>Birthday Presents</u></b></td>
+            <td onclick="bdayDinner();"><b><u>Birthday Dinner Info</u></b></td>
+            <td><b><a href="To-Do_List_Project\index.html" style="text-align: center; font-family: Bradley Hand ITC; font-size: 40px; cursor: pointer; color: rgb(255, 181, 255);">The RO-DO LIST</b></td></a>
+        </table>
+    </header>
+
+    <section id="section1">
+        <span id="span_header">Happy Birthday, <br> Mami!</span>
+    </section>
+
+    <footer>
+        <p>2020 Copyright by Mr Square Coding Workspace</p>
+    </footer>
+</body>
+
+</html>

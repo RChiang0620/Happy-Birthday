@@ -1,0 +1,39 @@
+body {
+    position: relative;
+    animation-name: move_1;
+    animation-duration: 3.0s;
+}
+
+@keyframes move_1 {
+    0% {
+        left: -2000px;
+        top: 0px
+    }
+
+    25% {
+        left: 0px;
+        top: 0px
+    }
+
+    50% {
+        left: 0px;
+        top: 0px
+    }
+
+    75% {
+        left: 0px;
+        top: 0px
+    }
+
+    100% {
+        left: 0px;
+        top: 0px
+    }
+}
+
+#back {
+    height: 70px;
+    width: 70px;
+    padding: 20px;
+}
+
